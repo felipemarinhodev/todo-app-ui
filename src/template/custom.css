@@ -6,3 +6,16 @@
 	text-decoration: line-through;
 	color: #777;
 }
+
+.tableActions {
+	width: 105px;
+	align-items: center;
+}
+
+.todoForm {
+	padding-bottom: 60px;
+}
+
+.tableHeader {
+	text-align: center;
+}
