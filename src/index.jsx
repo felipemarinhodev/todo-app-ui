@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import App from './main/app'
 import reducers from './main/reducers'
 
+// https://github.com/zalmoxisus/redux-devtools-extension
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ 
 	&& window.__REDUX_DEVTOOLS_EXTENSION__()
 
