@@ -26,7 +26,7 @@ class TodoForm extends Component {
 	}
 
 	render () {
-		const { add, search, description } = this.props;
+		const { add, search, clear, description } = this.props;
 		return (
 			<div role='form'className='todoForm'>
 
@@ -37,7 +37,7 @@ class TodoForm extends Component {
 						className="form-control"
 						placeholder='Adicione uma tarefa'
 						onChange={this.props.changeDescription}
-						value={this.props.description}
+						value={description}
 						onKeyUp={this.keyHandler}
 					/>
 				</Grid>
@@ -57,7 +57,7 @@ class TodoForm extends Component {
 					<IconButton 
 						style='default'
 						icon='close'
-						onClick={this.props.clear}
+						onClick={() => clear()}
 					/>
 				</Grid>
 			</div>
